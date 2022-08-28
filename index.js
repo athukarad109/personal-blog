@@ -6,7 +6,9 @@ const app = express();
 
 const port = process.env.PORT || 5000
 
-mongoose.connect('mongodb://localhost:27017/personalblog', () => {
+const uri = 'mongodb+srv://athukarad109:ihatemobilegames@cluster0.srm92jo.mongodb.net/Personal-blog?retryWrites=true&w=majority'
+
+mongoose.connect(uri, () => {
     console.log("Connected to db");
 });
 
